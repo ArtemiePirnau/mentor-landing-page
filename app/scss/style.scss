@@ -1,0 +1,527 @@
+@import "global";
+
+//TODO: Add content on my page
+//TODO: After that, make responsive my page
+
+.header {
+  min-height: 100vh;
+  background-color: $main;
+  &__top {
+    position: relative;
+    padding-top: 10px;
+  }
+  &__top::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    z-index: 3;
+    height: 330px;
+  }
+  &__top::before {
+    background-image: url("../images/header-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    right: 180px;
+    top: 160px;
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  &__social-item {
+    padding: 15px 0;
+  }
+  &__content {
+    position: relative;
+    text-align: center;
+    color: $milk;
+  }
+  &__content::after {
+    content: "";
+    z-index: 3;
+    width: 270px;
+    height: 330px;
+    position: absolute;
+    background-image: url("../images/header-2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    left: 200px;
+    bottom: -130px;
+  }
+  &__content-text {
+    line-height: 24px;
+    max-width: 430px;
+    margin: 0 auto 50px;
+    font-weight: 500;
+  }
+  &__content-title {
+    font-size: 60px;
+    max-width: 580px;
+    margin: 0 auto 50px;
+    line-height: 62px;
+  }
+  &__content-btn {
+    background-color: $second;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $milk;
+    padding: 20px 25px;
+    letter-spacing: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__content-btn:hover {
+    background-color: $milk;
+    color: $second;
+  }
+}
+
+.menu {
+  &__list {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+  }
+  &__item {
+    transition: all 0.3s ease-in-out;
+    margin: 0 20px;
+  }
+  &__link {
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    color: $second;
+  }
+  &__link:hover {
+    border-color: $milk;
+  }
+  &__link:hover {
+    color: $milk;
+  }
+}
+
+.svg path {
+  transition: all 0.3s ease-in-out;
+}
+
+.svg:hover path {
+  fill: $milk;
+}
+
+.team {
+  background-color: $second;
+  color: $milk;
+  &__title {
+    padding: 90px 0 20px;
+    font-size: 70px;
+    line-height: 82px;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 70px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 110px;
+    margin-bottom: 100px;
+  }
+  &__item {
+    text-align: left;
+    //height: 600px;
+    background-color: #000;
+    padding: 40px;
+  }
+  &__item-img {
+    padding: 10px 85px 50px;
+  }
+  &__item-title {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  &__item-text {
+    line-height: 24px;
+  }
+  &__numbers {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  &__number-value {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  &__number-text {
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.study {
+  padding: 120px 0;
+  background-color: $main;
+  color: $milk;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    background-color: $second;
+    color: $milk;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  &__btn:hover {
+    background-color: $milk;
+    color: $second;
+  }
+}
+
+.courses {
+  padding: 50px 0 100px;
+  background-color: $second;
+  color: $milk;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+  }
+  &__item {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  &__item:hover {
+    transform: translateY(-5%);
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__item-name {
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 48px;
+  }
+  &__item-name,
+  &__item-text {
+    text-align: left;
+  }
+  &__item-text {
+    line-height: 26px;
+  }
+}
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 120px 0;
+  color: $milk;
+  &__btn {
+    cursor: pointer;
+    color: $milk;
+    font-weight: 700;
+    border: none;
+    background-color: $special;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  &__btn:hover {
+    background-color: $milk;
+    color: $special;
+  }
+  &__title {
+    font-size: 70px;
+    line-height: 82px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  padding: 80px 0 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box-list {
+    display: flex;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__list-item + .footer__list-item {
+    margin-left: 20px;
+  }
+  &__box-text {
+    max-width: 400px;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+  &__lists {
+    display: flex;
+  }
+}
+
+//Media
+
+@media (max-width: 1430px) {
+  .header {
+    &__top::before {
+      content: none;
+    }
+    &__content::after {
+      content: none;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .team__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team__item {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer-menu + .footer-menu {
+    margin: 0 0px;
+  }
+  .footer__box {
+    width: 100%;
+    order: 2;
+  }
+  .footer__lists {
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-around;
+  }
+  .courses__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .study__inner {
+    flex-wrap: wrap;
+  }
+  .study__box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .study__img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 820px) {
+  .team__numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 50px 0;
+  }
+  .banner__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .team__title {
+    padding: 35px 0 15px;
+    font-size: 46px;
+    line-height: 50px;
+  }
+  .team__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .header {
+    min-height: 60vh;
+  }
+  .menu__list {
+    transform: translateY(-500%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .menu__list.show-menu {
+    transform: translateY(0%);
+    top: 95px;
+    background: $milk;
+    z-index: 3;
+  }
+  .menu__item {
+    margin: 30px 0;
+  }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .header__top-inner {
+    padding-bottom: 0;
+  }
+  .header__social-list {
+    display: flex;
+    justify-content: center;
+  }
+  .header__social-item {
+    padding: 15px 15px;
+  }
+  .menu__link {
+    color: $second;
+  }
+  .menu__link:hover {
+    border-color: $second;
+  }
+  .menu__link:hover {
+    color: $second;
+  }
+}
+@media (max-width: 615px) {
+  .section-title {
+    font-size: 46px;
+    line-height: 50px;
+  }
+  .courses__items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+  }
+  .header__content-title {
+    font-size: 45px;
+    margin: 0 auto 30px;
+    line-height: 50px;
+  }
+  .header__top-inner {
+    padding-bottom: 30px;
+  }
+  .team__item-img {
+    padding: 10px 10px 20px;
+  }
+  .study {
+    padding: 50px 0;
+  }
+  .study__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .study__img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .banner__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .banner__title {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .team__numbers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+}
+@media (max-width: 470px) {
+  .team__title {
+    padding: 15px 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .team__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .header__content-title {
+    font-size: 26px;
+    margin: 0 auto 30px;
+    line-height: 36px;
+  }
+  .header__content-btn {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 390px) {
+  .footer__lists {
+    width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-menu{
+    width: 100%;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .study__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .study__text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .team__item-title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .team__item {
+    padding: 40px 10px;
+  }
+  .team__items {
+    grid-gap: 30px 0px;
+  }
+  .team__item-text {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}

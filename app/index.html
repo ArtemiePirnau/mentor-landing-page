@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor | Образовательная онлайн-платформа</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="menu-toggle">
+              <span></span>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> О нас </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> Обучение </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> Курсы </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> Лекции </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"> Журнал </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="header__social-menu">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <?xml version="1.0"?><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="50px"
+                    height="50px"
+                    class="svg"
+                  >
+                    <path
+                      fill="#05386b"
+                      d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 612 612"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M612 116.258c-22.525 9.98-46.694 16.75-72.088 19.772 25.93-15.527 45.777-40.155 55.184-69.41-24.322 14.378-51.17 24.82-79.775 30.48-22.906-24.438-55.49-39.66-91.63-39.66-69.333 0-125.55 56.218-125.55 125.514 0 9.828 1.11 19.427 3.25 28.606-104.325-5.24-196.834-55.223-258.75-131.174-10.822 18.51-16.98 40.078-16.98 63.1 0 43.56 22.182 81.994 55.836 104.48-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.29 111.554 100.692 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.2 117.253 87.194-42.946 33.655-97.098 53.656-155.915 53.656-10.134 0-20.116-.612-29.944-1.72 55.568 35.68 121.537 56.484 192.44 56.484 230.947 0 357.187-191.29 357.187-357.188l-.42-16.253C573.87 163.525 595.21 141.42 612 116.257z"
+                      fill="#05386b"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link" href="#">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="youtube-square"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="50px"
+                    height="50px"
+                    class="svg-inline--fa fa-youtube-square fa-w-14 fa-5x svg"
+                  >
+                    <path
+                      fill="#05386b"
+                      d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
+                      class=""
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="header__content-inner">
+            <h1 class="header__content-title">
+              Образовательная онлайн-платформа
+            </h1>
+            <p class="header__content-text">
+              Курсы и видео-лекции по программированию, дизайну, маркетингу,
+              продвижение SEO
+            </p>
+            <a class="header__content-btn" href="#"> Все направления </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="team">
+      <div class="container">
+        <div class="team__inner">
+          <h3 class="section-title team__title">
+            Образование как тип мышления
+          </h3>
+          <p class="section-text team__text">
+            Свяжитесь с одним из наших лучших специалистов и получите работу
+            своей мечты. Они сделают все возможное, чтобы вы чувствовали себя
+            комфортно и были готовы изменить свою жизнь к лучшему.
+          </p>
+          <div class="team__items">
+            <div class="team__item">
+              <img
+                src="images/team/team-1.jpg"
+                alt="team image"
+                class="team__item-img"
+              />
+              <h5 class="team__item-title">Артем, маркетолог</h5>
+              <p class="team__item-text">
+                Я помогу вам получить базовые знания в маркетинге, вы получите
+                опыт из первых рук, в любое время.
+              </p>
+            </div>
+            <div class="team__item">
+              <img
+                src="images/team/team-2.jpg"
+                alt="team image"
+                class="team__item-img"
+              />
+              <h5 class="team__item-title">Саша, PR-менеджер</h5>
+              <p class="team__item-text">
+                Наша компания поможет вам достичь всех поставленных целей,
+                которые готовы изменить вашу жизнь - обращайтесь ко мне.
+              </p>
+            </div>
+            <div class="team__item">
+              <img
+                src="images/team/team-3.jpg"
+                alt="team image"
+                class="team__item-img"
+              />
+              <h5 class="team__item-title">Максим, ведущий разработчик</h5>
+              <p class="team__item-text">
+                Верстка, Программирование, БД - всему этому мы вас научим, если
+                у вас есть только одно качество - желание.
+              </p>
+            </div>
+            <div class="team__item">
+              <img
+                src="images/team/team-4.jpg"
+                alt="team image"
+                class="team__item-img"
+              />
+              <h5 class="team__item-title">Полина, ведущий дизайнер</h5>
+              <p class="team__item-text">
+                Я помогу вам сделать эстетичный и простой дизайн, как сделать
+                дизайн приятным и легким для пользователя, все это вы найдете в
+                моем курсе по дизайну.
+              </p>
+            </div>
+          </div>
+          <div class="team__numbers">
+            <div class="team__number">
+              <p class="team__number-value" data-target="5000">0</p>
+              <p class="team__number-text">
+                часов видео-лекций и вебинаров от лучших преподавателей
+              </p>
+            </div>
+            <div class="team__number">
+              <p class="team__number-value" data-target="50">0</p>
+              <p class="team__number-text">
+                направлений обучения востребованным профессиям
+              </p>
+            </div>
+            <div class="team__number">
+              <p class="team__number-value" data-target="2000">0</p>
+              <p class="team__number-text">
+                учеников уже занимаются на нашей платформе
+              </p>
+            </div>
+            <div class="team__number">
+              <p class="team__number-value" data-target="350">0</p>
+              <p class="team__number-text">
+                теоретических и практических курсов для разного уровня
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="study">
+      <div class="container">
+        <div class="study__inner">
+          <div class="study__box">
+            <h3 class="study__title">Выбирайте свой формат обучения</h3>
+            <p class="study__text">
+              Смотрите видео-лекции в удобное для вас время, обучайтесь на
+              тренажере, участвуйте в интенсивных воркшопах с командой или
+              проходите курс с гибким расписанием. На нашей платформе каждый
+              найдет подходящий формат.
+            </p>
+            <button class="study__btn">Выбирайте</button>
+          </div>
+          <img class="study__img" src="images/study.png" alt="study image" />
+        </div>
+      </div>
+    </section>
+    <section class="courses">
+      <div class="container">
+        <h3 class="courses__title section-title">Другие курсы</h3>
+        <div class="courses__inner">
+          <div class="courses__items">
+            <div class="courses__item">
+              <svg
+                width="200px"
+                height="200px"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>file_type_angular</title>
+                <polygon
+                  points="16 2 16 2 16 2 2.966 6.648 4.954 23.882 16 30 16 30 16 30 27.046 23.882 29.034 6.648 16 2"
+                  style="fill: #dd0031"
+                />
+                <polygon
+                  points="16 2 16 5.108 16 5.094 16 19.276 16 19.276 16 30 16 30 27.046 23.882 29.034 6.648 16 2"
+                  style="fill: #c3002f"
+                />
+                <path
+                  d="M16,5.094,7.852,23.364H10.89l1.638-4.088h6.916l1.638,4.088H24.12L16,5.094Zm2.38,11.662H13.62L16,11.03Z"
+                  style="fill: #fff"
+                />
+              </svg>
+              <h5 class="courses__item-name">Angular</h5>
+              <p class="courses__item-text">
+                Узнайте один из способов создания приложений с помощью Angular и
+                повторно используйте свой код и возможности для создания
+                приложений для любой цели развертывания.
+              </p>
+            </div>
+            <div class="courses__item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-label="Python"
+                role="img"
+                viewBox="0 0 512 512"
+                width="200px"
+                height="200px"
+              >
+                <rect width="512" height="512" rx="15%" fill="transparent" />
+                <g fill="#5a9fd4">
+                  <path
+                    id="p"
+                    d="M254 64c-16 0-31 1-44 4-39 7-46 21-46 47v35h92v12H130c-27 0-50 16-58 46-8 35-8 57 0 93 7 28 23 47 49 47h32v-42c0-30 26-57 57-57h91c26 0 46-21 46-46v-88c0-24-21-43-46-47-15-3-32-4-47-4zm-50 28c10 0 17 8 17 18 0 9-7 17-17 17-9 0-17-8-17-17 0-10 8-18 17-18z"
+                  />
+                </g>
+                <use
+                  xlink:href="#p"
+                  fill="#ffd43b"
+                  transform="rotate(180,256,255)"
+                />
+              </svg>
+              <h5 class="courses__item-name">Python</h5>
+              <p class="courses__item-text">
+                Миссия Python Software Foundation состоит в продвижении, защите
+                и развитии языка программирования Python, а также в поддержке и
+                содействии росту разнообразного международного сообщества
+                программистов Python.
+              </p>
+            </div>
+            <div class="courses__item">
+              <svg
+                height="200px"
+                viewBox="175.7 78 490.6 436.9"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#61dafb">
+                  <path
+                    d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"
+                  />
+                  <circle cx="420.9" cy="296.5" r="45.7" />
+                </g>
+              </svg>
+              <h5 class="courses__item-name">React</h5>
+              <p class="courses__item-text">
+                React изначально был спроектирован так, чтобы его можно было
+                внедрять постепенно. Другими словами, вы можете начать с малого
+                и использовать только ту функциональность React, которая
+                необходима вам в данный момент.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <div class="banner__inner">
+          <h3 class="banner__title">Давайте лучше узнаем друг друга</h3>
+          <p class="banner__text">
+            Выберите подходящий тариф и формат обучения, пройдите 2 урока и мы
+            подарим вам дополнительные лекции по любому направлению бесплатно!
+          </p>
+          <button class="banner__btn">Выбрать тариф</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__box">
+            <a class="footer__logo" href="#">
+              <img class="footer__logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <p class="footer__box-text">
+              Образовательная онлайн-платформа для развития и тренировки навыков
+              в сфере информационных технологий
+            </p>
+            <ul class="footer__box-list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  <?xml version="1.0"?><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      fill="#05386b"
+                      d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 612 612"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M612 116.258c-22.525 9.98-46.694 16.75-72.088 19.772 25.93-15.527 45.777-40.155 55.184-69.41-24.322 14.378-51.17 24.82-79.775 30.48-22.906-24.438-55.49-39.66-91.63-39.66-69.333 0-125.55 56.218-125.55 125.514 0 9.828 1.11 19.427 3.25 28.606-104.325-5.24-196.834-55.223-258.75-131.174-10.822 18.51-16.98 40.078-16.98 63.1 0 43.56 22.182 81.994 55.836 104.48-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.29 111.554 100.692 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.2 117.253 87.194-42.946 33.655-97.098 53.656-155.915 53.656-10.134 0-20.116-.612-29.944-1.72 55.568 35.68 121.537 56.484 192.44 56.484 230.947 0 357.187-191.29 357.187-357.188l-.42-16.253C573.87 163.525 595.21 141.42 612 116.257z"
+                      fill="#05386b"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="youtube-square"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="50px"
+                    height="50px"
+                    class="svg-inline--fa fa-youtube-square fa-w-14 fa-5x"
+                  >
+                    <path
+                      fill="#05386b"
+                      d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
+                      class=""
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__lists">
+            <nav class="list-learning__menu footer-menu">
+              <h6 class="footer-title">Обучение</h6>
+              <ul class="list-learning__list">
+                <li class="list-learning__item footer-item">
+                  <a class="list-learning__item" href="#">Обучение</a>
+                </li>
+                <li class="list-learning__item footer-item">
+                  <a class="list-learning__item" href="#">Курсы</a>
+                </li>
+                <li class="list-learning__item footer-item">
+                  <a class="list-learning__item" href="#">Вебинары</a>
+                </li>
+                <li class="list-learning__item footer-item">
+                  <a class="list-learning__item" href="#">Воркшопы</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="list-about__menu footer-menu">
+              <h6 class="footer-title">О нас</h6>
+              <ul class="list-about__list">
+                <li class="list-about__item footer-item">
+                  <a class="list-about__link" href="#">О платформе</a>
+                </li>
+                <li class="list-about__item footer-item">
+                  <a class="list-about__link" href="#">Преподаватели</a>
+                </li>
+                <li class="list-about__item footer-item">
+                  <a class="list-about__link" href="#">Отзывы</a>
+                </li>
+                <li class="list-about__item footer-item">
+                  <a class="list-about__link" href="#">Тарифы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
